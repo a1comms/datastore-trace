@@ -1,0 +1,12 @@
+{
+    "require": {
+        "a1comms/php-gds": "~4.2",
+        "google/cloud": "~0",
+        "carbondate/carbon": "^1.33"
+    },
+    "config": {
+        "platform": {
+            "php": "5.5.35"
+        }
+    }
+}

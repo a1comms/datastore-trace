@@ -1,0 +1,18 @@
+runtime: php55
+service: test
+
+handlers:
+- url: /.*
+  secure: always
+  script: public/index.php
+
+skip_files:
+    - ^(.*/)*#.*#$
+    - ^(.*/)*.*~$
+    - ^(.*/)*\..*$
+    - ^(.*)_ide_helper\.php$
+    - ^(.*)\.DS_Store$
+    - ^(.*/)?node_modules.*$
+
+env_variables:
+    GAE_SKIP_GCS_INIT: true
